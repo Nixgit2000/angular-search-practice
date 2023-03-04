@@ -1,17 +1,12 @@
+<app-header></app-header>
+  <input [(ngModel)]="searchText" placeholder="Search by Title, Franchise, Actor...">
 <div class="container">
-  <input [(ngModel)]="searchText" placeholder="Search">
-  <table>
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Name</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let e of data | search: searchText">
-      <td>{{e.id}}</td>
-      <td>{{e.name}}</td>
-    </tr>
-    </tbody>
-  </table>
-</div>
+  <div id="container1">
+      <ul style="list-style-type: none ;" id="container2" *ngFor="let enteredText of data | search: searchText">
+      <li id="name" >{{enteredText.title}}</li>
+      <li id="pic" ><img id="pic1" src="{{enteredText.pic}}"></li>
+      </ul>
+      </div>
+  </div>
+
+
