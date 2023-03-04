@@ -1,10 +1,16 @@
 <app-header></app-header>
   <input [(ngModel)]="searchText" placeholder="Search by Title, Franchise, Actor...">
+  <br>
 <div class="container">
-  <div id="container1">
-      <ul style="list-style-type: none ;" id="container2" *ngFor="let enteredText of data | search: searchText">
-      <li id="name" >{{enteredText.title}}</li>
-      <li id="pic" ><img id="pic1" src="{{enteredText.pic}}"></li>
+  <div id="container1" style="display: grid; grid-template-columns: repeat(8, 1fr);">
+      <ul style="display: grid; grid-template-columns: repeat(10, 1fr); grid-template-rows: repeat(10, 1fr); list-style-type: none ;" id="container2" *ngFor="let enteredText of data | search: searchText">
+      
+      <li style="grid-row: 1 /span 8; grid-column: 1 / span 10;" id="img-holder" >
+        <img style="object-position: {{enteredText.backgroundPos}}" id="img" src="{{enteredText.pic}}">
+        
+      </li>
+  <li id="list1" style="grid-row: 9; grid-column: 1 / span 10; font-family: {{enteredText.font}}; font-size: {{enteredText.fontSize}}" id="name" >{{enteredText.title}}</li>
+  <li id="list2" style=" grid-row: 10; grid-column: 1 / span 10; font-family: {{enteredText.font}}; font-size: {{enteredText.fontSize2}}" id="name" >{{enteredText.title2}}</li>
       </ul>
       </div>
   </div>
