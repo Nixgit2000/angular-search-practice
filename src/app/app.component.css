@@ -28,6 +28,12 @@ input {
 #container2 {
     width: 100%;
     max-height: 30vh;
+    
+}
+
+
+#logo1 {
+    background-image: src('../../assets/Nixflix3D.png');
 }
 #name {
     display: flex;
