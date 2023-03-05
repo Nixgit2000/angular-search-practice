@@ -12,12 +12,12 @@ input {
     align-items: center;
     justify-content: center;
     padding-left: 1vw;
-    width: 100vw; 
+    width: 98vw; 
     height: 5vh; 
     font-size: 3vh;
     font-family: LOTR;
     color: black;
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(196, 195, 184);
 }
 
 #container1 {
@@ -48,7 +48,9 @@ input {
 #img-holder {
 
     max-height: 100%;
- 
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
 }
 #img {
