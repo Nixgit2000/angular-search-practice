@@ -1,0 +1,5 @@
+#grid {
+    width: 67vw;
+    background-color: grey;
+    position: relative; top: -6vh;left: 32vw;height: 5vh;
+}

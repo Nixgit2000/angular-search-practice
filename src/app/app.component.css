@@ -12,7 +12,7 @@ input {
     align-items: center;
     justify-content: center;
     padding-left: 1vw;
-    width: 98vw; 
+    width: 30vw; 
     height: 5vh; 
     font-size: 3vh;
     font-family: LOTR;
@@ -24,10 +24,11 @@ input {
     display: inline-flex;
     width: 100%;
     background-color: black;
+ 
 }
 #container2 {
     width: 100%;
-    max-height: 30vh;
+    height: 30vh;
     
 }
 

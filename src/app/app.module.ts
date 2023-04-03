@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { SearchPipe } from './search.pipe';
 import { HeaderComponent } from './header/header.component';
+import { ButtonsComponent } from './buttons/buttons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchPipe,
-    HeaderComponent
+    HeaderComponent,
+    ButtonsComponent
   ],
   imports: [
     BrowserModule,
